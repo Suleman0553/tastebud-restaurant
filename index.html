@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteBuds Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TasteBuds Restaurant</h1>
+        <p>Fresh, Delicious & Delivered to You</p>
+    </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="food-grid">
+            <div class="food-item">
+                <img src="https://via.placeholder.com/250" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Cheesy and loaded with toppings</p>
+                <span>$10</span>
+            </div>
+            <div class="food-item">
+                <img src="https://via.placeholder.com/250" alt="Burger">
+                <h3>Burger</h3>
+                <p>Juicy beef patty with fresh veggies</p>
+                <span>$8</span>
+            </div>
+            <div class="food-item">
+                <img src="https://via.placeholder.com/250" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Rich creamy sauce with herbs</p>
+                <span>$12</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="order">
+        <h2>Place Your Order</h2>
+        <form action="https://formsubmit.co/abusuleman055@gmail.com" method="POST">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Redirect to Thank You page -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="food">Select Food:</label>
+            <select id="food" name="food" required>
+                <option value="">--Choose--</option>
+                <option value="Pizza">Pizza - $10</option>
+                <option value="Burger">Burger - $8</option>
+                <option value="Pasta">Pasta - $12</option>
+            </select>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TasteBuds Restaurant | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
